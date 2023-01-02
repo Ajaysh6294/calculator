@@ -1,0 +1,41 @@
+#include<iostream>
+#include<conio.h>
+#include<stdlib.h>
+using namespace std;
+int main()
+{
+	int a,b;
+	char ch;
+	while(1)
+	{
+		system("CLS");
+		cout<<"Enter two number : ";
+		cin>>a>>b;
+		cout<<"Enter operator : ";
+		cin>>ch;
+		switch(ch)
+		{
+			case '+':
+				cout<<"Addition of number : "<<a+b;
+				break;
+			case '-':
+				cout<<"Subtration of number : "<<a-b;
+				break;
+			case '*':
+				cout<<"Multiplication of number : "<<a*b;
+				break;
+			case  '/':
+				cout<<"Division of number : "<<a/b;
+				break;
+			case '%':
+				cout<<"Modulus of number : "<<a%b;
+				break;
+				default:
+				cout<<"Sorry | Invalid Equation";
+		}
+		cout<<endl<<"you want calculate any number(Y/N) : ";
+		cin>>ch;
+		if(ch=='N'||ch=='n')
+		 break;
+	}
+}
